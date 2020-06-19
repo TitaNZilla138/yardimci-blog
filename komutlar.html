@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <script language="javascript">
+    document.onmousedown=disableclick;
+    status="Right Click Disabled";
+    Function disableclick(event)
+    {
+      if(event.button==2)
+       {
+         alert(status);
+         return false;    
+       }
+    }
+</script>
+
+<body oncontextmenu="return false">
+...
+</body>
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="img\1000.png" type="img/1000.png">
+<title>Yardımcı Bot - Komutlar</title>
+
+<link rel="stylesheet" href="css\bootstrap.css">
+<link rel="stylesheet" href="vendors\linericon\style.css">
+<link rel="stylesheet" href="css\font-awesome.min.css">
+<link rel="stylesheet" href="vendors\owl-carousel\owl.carousel.min.css">
+<link rel="stylesheet" href="css\magnific-popup.css">
+<link rel="stylesheet" href="vendors\nice-select\css\nice-select.css">
+<link rel="stylesheet" href="vendors\animate-css\animate.css">
+<link rel="stylesheet" href="vendors\flaticon\flaticon.css">
+
+<link rel="stylesheet" href="css\style.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>Yardımcı Bot</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="botbilgi.html">Bot Bilgi</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dökünmasyon
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="komutlar.html">Komutlar</a>
+                    <a class="dropdown-item" href="botbilgi.html">Bot Bilgi</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+        </ul>
+        <button class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href="anan.html" >Botu Ekle!</button>
+    </div>
+</nav>
+
+
+<section class="home_banner_area">
+<div class="banner_inner">
+<div class="container">
+<div class="row">
+&nbsp
+</div>
+</div>
+</div>
+</section>
+<center>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-3997950661380123" data-ad-slot="4603315959"></ins>
+<script type="192e6101cbf225a0ad28310e-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+
+<body>
+<br>
+<div class="container">
+<h2>Komutlar</h2>
+<input type="textt" id="myInput" onkeyup="if (!window.__cfRLUnblockHandlers) return false; myFunction()" placeholder="Aradığınız Komutları Görmek İçin Bana Tıklatın!" title="Arayacağınız Komutu Anahtar Kelime Olarak Giriniz." data-cf-modified-192e6101cbf225a0ad28310e-="">
+<table id="myTable">
+<tr class="header">
+<th style="width:20%;">Komut</th>
+<th style="width:60%;">Açıklama</th>
+<th style="width:20%;">Kullanım</th>
+</tr>
+<tr>
+<td><strong>Yardım</strong></td>
+<td>Bot Komutlarını Görmek İçin.</td>
+<td>!!yardım</td>
+  
+</tr>
+<tr>
+<td><strong>Ekonomi Komutları</strong></td>
+<td>Ekonomi komutlarını gösterir.</td>
+<td>!!yardım-ekonomi</td>
+  
+</tr>
+<tr>
+<td><strong>Moderasyon Komutları</strong></td>
+<td>Moderasyon komutlarını gösterir.</td>
+<td>!!yardım-moderasyon</td>
+  
+</tr>
+<tr>
+<td><strong>Müzik Komutları</strong></td>
+<td>Müzik komutlarını gösterir.</td>
+<td>!!yardım-müzik</td>
+  
+</tr>
+<tr>
+<td><strong>İnvite - Davet Komutları</strong></td>
+<td>İnvite Manager Komutlarını Gösterir.</td>
+<td>!!yardım-davet</td>
+  
+</tr>
+<tr>
+ <td><strong>Eğlence Komutları</strong></td>
+<td>Eğlence Komutlarını Gösterir</td>
+<td>!!yardım-eğlence</td>
+  
+</tr>
+<tr>
+<td><strong>İstatistik</strong></td>
+<td>Bu Komut İle Botun Pingini Mb Sini Görebilirsin.</td>
+<td>!!istatistik</td>
+</tr>
+<tr>
+<td><strong>Botun Daveti</strong></td>
+<td>Botun Davetini Dm Yolundan Size Verir.</td>
+<td>!!davet</td>
+  
+</tr>
+<tr>
+<td><strong>Kullanıcı Bilgi</strong></td>
+<td>Bu Komut İle Sizin Bilgilerinizi Gösterir (Örn; Hesapınızın ne zaman açıldığı vs.)</td>
+<td>!!kullanıcı-bilgi</td>
+  
+</tr>
+<tr>
+<td><strong>Ping</strong></td>
+<td>Botun Pingini Gösterir<br> 
+<td>!!ping</td>
+  </tr>
+<tr>
+  
+  <td><strong>Davet Kanal-ayarla/sıfırla</strong></td>
+<td>İnvite Manager Sistemidir Davet Kanalını Ayarlar.</td>
+<td>!!davet-kanal</td>
+  
+</tr>
+<tr>
+<td><strong>Davet Ekle/Davet Sıfırla/Davet Sil</strong></td>
+<td>İnvite Manager Sistemidir, Yetkili Komutudur, O kişiye İstediği Kadar Davet Atar, Siler</td>
+<td>!!davet-ekle/!!davet-sıfırla/!!davetsil</td>
+  
+</tr>
+<tr>
+<td><strong>Davet Stokla</strong></td>
+<td>Bu komutu bilmiyorum kardeşim kb.</td>
+<td>!!davet-stokla</td>
+  
+</tr>
+<tr>
+<td><strong>Davetlerim</strong></td>
+<td>Davetlerinizi gösterir.</td>
+ <td>!!davetlerim</td>
+  
+</tr>
+<tr>
+<td><strong>Davet Oluştur</strong></td>
+<td>Sunucu Davetini oluşturur.</td>
+<td>!!davet-oluştur</td>
+  
+</tr>
+<tr>
+<td><strong>Market Komutları - Çanta</strong></td>
+<td>Çanta Komutu Neyi Alıp Almadığınızı Gösterir.</td>
+<td>!!çanta</td>
+  
+</tr>
+<tr>
+<td><strong>Para Yolla</strong></td>
+<td>İstediğiniz Kişiye belirli bir para yollar bu parayı siz ayarlarsınız.</td>
+<td>!!para-yolla</td>
+  
+</tr>
+<tr>
+<td><strong>Günlük Hediye</strong></td>
+<td>Her 24 satte Belirli bir parada para verir.</td>
+<td>!!günlük-hediye</td>
+  
+</tr>
+<tr>
+ <td><strong>Paralarım</strong></td>
+<td>Paralarınızı Elmaslarınızı Altınlarınızı Gösterir.</td>
+<td>!!paralarım</td>
+  
+</tr>
+<td><strong>Elmas/Altın/Para Yolla</strong></td>
+<td>Elmas Altın Para Gönderirsin.</td>
+<td>!!elmas-yolla/!!altın-yolla</td>
+
+<tr>
+<td><strong>Meslek Görmek İçin</strong></td>
+<td>Meslekleri görebilirsiniz. Meslek edine bilirsiniz </td>
+<td>!!meslek</td>
+  
+</tr>
+<tr>
+<td><strong>Marketten Eşya Almak İçin</strong></td>
+<td>Marketten Birşey Alabilirsin.</td>
+<td>!!market</td>
+  
+</tr>
+  <tr>
+  <td><strong>Moderasyon Komutları - Ban</strong></td>
+<td>Kullanıcıyı Banlar.</td>
+<td>!!ban <kişi></td>
+    
+  </tr>
+  <tr>
+  <td><strong>Kick</strong></td>
+<td>Bir Kişiyi Sunucudan Atar.</td>
+<td>!!kick <kişi></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Mute</strong></td>
+<td>Bir Kişiyi Susturursun.</td>
+<td>!!mute <kişi></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Oylama</strong></td>
+<td>Bir oylama çıkartır.</td>
+<td>!!oylama <mesaj></td>
+    
+    </tr>
+  <tr>
+  <td><strong>Sunucu panel <aç/sil></strong></td>
+<td>Sunucunun bilgilerini gösterir (örn; Botlar: Sunucu Kaç kişi vs.)</td>
+<td>!!sunucu-panel <aç/sil></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Resimli Güvenlik Sistemi</strong></td>
+<td>Hesapını 1 ay önce açanlara şüpheli der 1 ayı geçenlere Onaylı.</td>
+<td>!!güvenlik #kanal</td>
+  
+  </tr>
+  <tr>
+  <td><strong>Küfür Engelleme</strong></td>
+<td>Küfür edenleri engeller.</td>
+<td>!!küfür-engelle <aç/kapat></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Anti Spam <süre> </strong></td>
+<td>Spam atanlara uyarı verir.</td>
+<td>!!anti-spam <süre></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Banlist</strong></td>
+<td>Banlananları gösterir.</td>
+<td>!!banlananlar</td>
+  
+  </tr>
+  <tr>
+  <td><strong>Duyuru yapmak İçin</strong></td>
+<td>Duyuru yapar.</td>
+<td>!!duyuru <mesaj></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Çekiliş</strong></td>
+<td>Çekiliş yapar. Kullanımı Alt Altadır.</td>
+<td>!!çekiliş</td>
+  
+  </tr>
+  <tr>
+  <td><strong>Rol al/ver</strong></td>
+<td>İstediğiniz kişiye rol alıp verirsiniz.</td>
+<td>!!rol ver/al</td>
+  
+  </tr>
+  <tr>
+  <td><strong>Slowmode <süre></strong></td>
+<td>İstediğiniz kadar slowmode açar. (Sınırı 6 saattir.) </td>
+<td>!!slowmode <süre></td>
+  
+    </tr>
+  <tr>
+  <td><strong>Temizle</strong></td>
+<td>Sohbeti toplu temizlersiniz. (max 99) </td>
+<td>!!market</td>
+    
+        </tr>
+  <tr>
+  <td><strong>Müzik Komutları - Çal</strong></td>
+<td>Bir İstediğiniz Şarkıyı Çalar, oynatır. </td>
+<td>!!çal <şarkı ismi></td>
+  
+      </tr>
+  <tr>
+  <td><strong>Gir</strong></td>
+<td> Kanala Girer </td>
+<td>!!gir</td>
+    
+        </tr>
+  <tr>
+  <td><strong>Geç</strong></td>
+<td>Çalan Şarkıyı Geçer.</td>
+<td>!!geç</td>
+    
+        </tr>
+  <tr>
+  <td><strong>Durdur</strong></td>
+<td>Şarkıyı durdurur</td>
+<td>!!durdur</td>
+    
+        </tr>
+  <tr>
+  <td><strong>Ses <ses> </strong></td>
+<td>Şarkı Sesini Ayarlar </td>
+<td>!!ses</td>
+    
+      </tr>
+  <tr>
+  <td><strong>Sıra</strong></td>
+<td>Müzik listesini gösterir </td>
+<td>!!sıra</td>
+    
+            
+      </tr>
+  <tr>
+  <td><strong>Çalan</strong></td>
+<td>Çalan şarkıyı gösterir</td>
+<td>!!çalan</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Devam</strong></td>
+<td>Duraklatılan Şarkıyı Geri Oynatır </td>
+<td>!!sıra</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Duraklat</strong></td>
+<td>Şarkıyı Duraklatır. </td>
+<td>!!duraklat</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Komutları - Seviye</strong></td>
+<td>Seviyenizi Gösterir</td>
+<td>!!seviye</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Ayarlar</strong></td>
+<td>Ayarladığınız Kanalları vs. gösterir. </td>
+<td>!!seviye-ayarlar</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Aç</strong></td>
+<td>Seviye Sistemini açar.</td>
+<td>!!seviye-aç</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Bilgi</strong></td>
+<td>Burayı bilmiyorum xd </td>
+<td>!!seviye-bilgi</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Kapat</strong></td>
+<td>Seviye Sistemini Kapatır</td>
+<td>!!seviye-kapat</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Log</strong></td>
+<td>Seviye Log Kanalını Ayarlar </td>
+<td>!!seviye-log</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Rol</strong></td>
+<td>Bir Levelde Gelecek Otomatik Rolü Belirler </td>
+<td>!!seviye-rol</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Seviye Xp</strong></td>
+<td>Seviye xp Sini ayarlar</td>
+<td>!!seviye-xp</td>
+    
+          </tr>
+  <tr>
+  <td><strong>Korona</strong></td>
+<td>Korona Vakalarını vs. Gösterir.</td>
+<td>!!korona <ülke kodu></td>
+    
+</tr>
+</table>
+</div>
+<br>
+<section class="home_banner_area">
+<div class="banner_inner">
+<div class="container">
+<div class="row">
+&nbsp
+</div>
+</div>
+</div>
+</section>
+<script type="192e6101cbf225a0ad28310e-text/javascript">
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
+
+
+<footer class="footer_area">
+<div class="container">
+<div class="row footer_inner">
+<div class="col-lg-5 col-sm-6">
+<aside class="f_widget ab_widget">
+<div class="f_title">
+<h3>Destek Sunucumuz!</h3>
+</div>
+<p>Bize Ulaşmak İçin En Kolay Yol https://discord.gg/5M9zn8b</p>
+<p>
+Copyright &copy;<script type="dda86c40e9375f9c5fcebcfe-text/javascript">document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır | Tasarım @TitaNZilla ツ🌙#0391  Tarafından Yapılmıştır. </a>
+</p>
+</aside>
+</div>
+<iframe src="https://discord.com/widget?id=716386007527981136&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></a>
+</aside>
+</div>
+
+</footer>
+
+
+
+<script src="js\jquery-3.2.1.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\popper.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\bootstrap.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\stellar.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\jquery.magnific-popup.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="vendors\nice-select\js\jquery.nice-select.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="vendors\isotope\imagesloaded.pkgd.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="vendors\isotope\isotope-min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="vendors\owl-carousel\owl.carousel.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\jquery.ajaxchimp.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="vendors\counter-up\jquery.waypoints.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="vendors\counter-up\jquery.counterup.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\mail-script.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\gmaps.min.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="js\theme.js" type="192e6101cbf225a0ad28310e-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="192e6101cbf225a0ad28310e-|49" defer=""></script></body>
+</body></html>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/now-ui-kit.min.js"></script>
+</body>
+</html>
